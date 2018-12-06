@@ -63,8 +63,8 @@ function handlep1(err, cont) {
     let miny = ysort[0][1];
     let maxy = ysort[ysort.length - 1][1];
     let total = 0;
-    for (let i = minx - 10000; i <= maxx + 10000; i += 1) {
-        for (let j = miny - 1000; j <= maxy + 1000; j += 1) {
+    for (let i = minx - 10000/cont.length; i <= maxx + 10000/cont.length; i += 1) {
+        for (let j = miny - 10000/cont.length; j <= maxy + 10000/cont.length; j += 1) {
             let dst = 0;
             for (let coordinate of cont) {
                 let newdst = Math.abs(i - coordinate[0]) + Math.abs(j - coordinate[1]);
