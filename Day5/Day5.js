@@ -1,6 +1,6 @@
 let fs = require('fs');
 
-fs.readFile('input.txt', 'utf8', handlep1);
+fs.readFile('input.txt', 'utf8', handlep2);
 
 
 function handlep1(err, cont) {
